@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab&display=swap');
+
+.sans {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.slab {
+    font-family: 'Josefin Slab', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+hr {
+    border-color: #DDDDDD #DDDDDD #FFFFFF #FFFFFF;
+    border-style: solid solid solid none;
+    border-width: thin;
+}
+
+img {
+    object-fit: contain;
+    object-position: right;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 96vmin;
+}
+
+section button {
+    width: 45vmin;
+    height: 2em;
+}
+
+section>div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+    width: 100%;
+}
+
+#game {
+    height: 24vmin;
+}
+
+#game>div {
+    background-color: white;
+    border-color: white;
+    border-style: ridge;
+    border-width: thick;
+    width: 20%;
+    height: 80%;
+}
+
+#game>div.display img {
+    opacity: 1;
+}
+
+#game>div.exit img {
+    opacity: 0;
+}
