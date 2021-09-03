@@ -3,46 +3,44 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
         <title>Monty Hall Problem</title>
-        <script defer-src="main.js" src='live.js'></script>
+        <script defer-src="main.js" src="live.js"></script>
     </head>
     <body>
         <header>
-            <h3 class="sans">Monty Hall Problem</h3>
+            <h3>Monty Hall Problem</h3>
             <hr>
         </header>
         <main>
-            <article class="slab">
-                <p>Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats.</p>
-                <ul>
-                    <li>The host must always open a door that was not picked by the contestant.</li>
-                    <li>The host must always open a door to reveal a goat and never the car.</li>
-                    <li>The host must always offer the chance to switch between the originally chosen door and the remaining closed door.</li>
-                </ul>
-                <blockquote>Is it to your advantage to switch your choice?</blockquote>
-            </article>
-            <h4 class="sans">Game</h4>
-            <section>
-                <button class="slab" id="start" disabled>START</button>
-                <div id="game">
-                    <div id="a"><img src="./img/cart.png"></div>
-                    <div id="b"><img src="./img/goat.png"></div>
-                    <div id="c"><img src="./img/goat.png"></div>
+            <p>Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats.</p>
+            <ul>
+                <li>The host must always open a door that was not picked by the contestant.</li>
+                <li>The host must always open a door to reveal a goat and never the car.</li>
+                <li>The host must always offer the chance to switch between the originally chosen door and the remaining closed door.</li>
+            </ul>
+            <blockquote>Is it to your advantage to switch your choice?</blockquote>
+            <h4>Game</h4>
+            <div id="game">
+                <button id="start" disabled>START</button>
+                <div class="imgs">
+                    <span id="a"><img src="./img/cart.png" alt="CART"></span>
+                    <span id="b"><img src="./img/goat.png" alt="GOAT"></span>
+                    <span id="c"><img src="./img/goat.png" alt="GOAT"></span>
                 </div>
-                <button class="slab" id="check" disabled>CHECK</button>
+                <button id="check" disabled>CHECK</button>
                 <div>
-                    <span class="slab"><em id="keepHitP">0</em>% win <em id="keepHitN">0</em> - lose <em id="keepMiss">0</em></span>
-                    <span class="slab"><em id="swapHitP">0</em>% win <em id="swapHitN">0</em> - lose <em id="swapMiss">0</em></span>
+                    <span><em id="keepHitP">0</em>% win <em id="keepHitN">0</em> - lose <em id="keepMiss">0</em></span>
+                    <span><em id="swapHitP">0</em>% win <em id="swapHitN">0</em> - lose <em id="swapMiss">0</em></span>
                 </div>
                 <div>
-                    <button class="slab" id="keep" disabled>DO NOT SWITCH</button>
-                    <button class="slab" id="swap" disabled>SWITCH</button>
+                    <button id="keep" disabled>DO NOT SWITCH</button>
+                    <button id="swap" disabled>SWITCH</button>
                 </div>
-            </section>
-            <h4 class="sans">Reference Images</h4>
-            <ul class="slab">
+            </div>
+            <h4>Reference Images</h4>
+            <ul>
                 <li>Car (<a href="https://www.pixiv.net/artworks/87589302">Cart by Kukie_nyan</a>)</li>
                 <li>Goat (<a href="https://www.pixiv.net/artworks/91812831">俺、参上ッ！ by Kukie_nyan</a>)</li>
             </ul>
